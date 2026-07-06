@@ -6,129 +6,154 @@
   <title>AZ& — Interior Design</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav">
-    <div class="nav-left">
-      <a href="mailto:azampersand@gmail.com" class="nav-link">Email</a>
-      <a href="https://instagram.com/azampersand" target="_blank" rel="noopener" class="nav-link">Instagram</a>
-    </div>
-    <div class="nav-right">
-      <a href="#work" class="nav-link">Work</a>
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#about" class="nav-link">About</a>
-    </div>
+    <a href="#" class="nav-logo">
+      <img src="logo.PNG" alt="AZ&" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Request a Consultation</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">&#9776;</button>
   </nav>
 
-  <!-- INTRO -->
-  <section class="intro">
-    <div class="intro-logo-wrap">
-      <img src="logo.PNG" alt="AZ&" class="intro-logo" />
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-img ph"></div>
+    <div class="hero-overlay">
+      <p class="hero-tag">Interior Design Studio</p>
+      <h1 class="hero-title">Design that feels<br /><em>entirely yours.</em></h1>
     </div>
-    <div class="intro-footer">
-      <span class="intro-label">Interior Design Studio</span>
-      <span class="intro-scroll">↓</span>
-      <span class="intro-location">Est. 2026</span>
+    <a href="#projects" class="hero-scroll">Scroll ↓</a>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <section class="intro-strip">
+    <p class="intro-text">We help you see what your space could become — through thoughtful design consultations and photorealistic renderings — before a single piece moves.</p>
+    <div class="intro-meta">
+      <span>Est. 2026</span>
+      <span>Residential Design</span>
+      <span>@azampersand</span>
     </div>
   </section>
 
-  <!-- MANIFESTO -->
-  <section class="manifesto">
-    <p class="manifesto-text">
-      We help you see what your<br />
-      space could <em>become</em> —<br />
-      before anything moves.
-    </p>
-    <div class="manifesto-aside">
-      <p>Design consultations and photorealistic renderings for residential spaces.</p>
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="projects-header">
+      <span class="label">Selected Projects</span>
+    </div>
+    <div class="projects-grid">
+
+      <a href="#" class="project-card project-card--large">
+        <div class="project-img ph"></div>
+        <div class="project-info">
+          <span class="project-name">Living Room Redesign</span>
+          <span class="project-type">Consultation + Rendering</span>
+        </div>
+      </a>
+
+      <a href="#" class="project-card">
+        <div class="project-img ph"></div>
+        <div class="project-info">
+          <span class="project-name">Open Kitchen Concept</span>
+          <span class="project-type">Rendering</span>
+        </div>
+      </a>
+
+      <a href="#" class="project-card">
+        <div class="project-img ph"></div>
+        <div class="project-info">
+          <span class="project-name">Primary Suite</span>
+          <span class="project-type">Full Consultation</span>
+        </div>
+      </a>
+
+      <a href="#" class="project-card project-card--wide">
+        <div class="project-img ph"></div>
+        <div class="project-info">
+          <span class="project-name">Loft Transformation</span>
+          <span class="project-type">Consultation + Rendering</span>
+        </div>
+      </a>
+
     </div>
   </section>
 
   <!-- SERVICES -->
   <section class="services" id="services">
-    <div class="services-rule"></div>
-    <div class="service-row">
-      <span class="service-num">01</span>
-      <div class="service-body">
-        <h2 class="service-title">Design Consultations</h2>
-        <p class="service-desc">We sit with you, understand how you live, and translate that into a clear design direction. From material selection to spatial flow — every decision is considered.</p>
+    <div class="services-inner">
+      <div class="services-left">
+        <span class="label">Services</span>
+        <h2 class="services-heading">What we offer</h2>
+        <p class="services-sub">Two focused services designed to help you see your space clearly and make decisions with confidence.</p>
       </div>
-      <div class="service-img">
-        <div class="ph ph-tall"><span>Image</span></div>
-      </div>
-    </div>
-    <div class="services-rule"></div>
-    <div class="service-row service-row--flip">
-      <span class="service-num">02</span>
-      <div class="service-body">
-        <h2 class="service-title">Design Renderings</h2>
-        <p class="service-desc">Photorealistic visualizations of your space before you commit to a single change. See it. Feel it. Refine it — then bring it to life with total confidence.</p>
-      </div>
-      <div class="service-img">
-        <div class="ph ph-tall"><span>Image</span></div>
-      </div>
-    </div>
-    <div class="services-rule"></div>
-  </section>
-
-  <!-- WORK -->
-  <section class="work" id="work">
-    <div class="work-header">
-      <span class="eyebrow">Selected Work</span>
-    </div>
-    <div class="work-grid">
-      <div class="work-cell work-cell--a">
-        <div class="ph ph-work"><span>Project 01</span></div>
-        <p class="work-caption">Living Room — Brooklyn, NY</p>
-      </div>
-      <div class="work-cell work-cell--b">
-        <div class="ph ph-work"><span>Project 02</span></div>
-        <p class="work-caption">Kitchen Renovation — Chicago, IL</p>
-      </div>
-      <div class="work-cell work-cell--c">
-        <div class="ph ph-work"><span>Project 03</span></div>
-        <p class="work-caption">Studio Rendering — Los Angeles, CA</p>
-      </div>
-      <div class="work-cell work-cell--d">
-        <p class="work-pull">"Spaces that feel<br /><em>entirely yours."</em></p>
+      <div class="services-right">
+        <div class="service-item">
+          <div class="service-top">
+            <span class="service-num">01</span>
+            <h3 class="service-name">Design Consultations</h3>
+          </div>
+          <p class="service-desc">We sit with you, understand how you live, and translate that into a clear design direction. Material selection, spatial flow, furniture placement — every decision considered.</p>
+        </div>
+        <div class="service-divider"></div>
+        <div class="service-item">
+          <div class="service-top">
+            <span class="service-num">02</span>
+            <h3 class="service-name">Design Renderings</h3>
+          </div>
+          <p class="service-desc">Photorealistic visualizations of your transformed space before you commit to a single change. See it, feel it, refine it — then bring it to life with total confidence.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section class="about" id="about">
-    <div class="about-img">
-      <div class="ph ph-about"><span>Photo</span></div>
-    </div>
-    <div class="about-text">
-      <span class="eyebrow">About</span>
-      <p class="about-body">AZ& is a design studio founded by two friends with a shared conviction: that great interiors aren't about perfection — they're about authenticity. We combine careful listening, a strong design sensibility, and the power of modern visualization to help our clients truly see what's possible.</p>
-      <p class="about-body about-body--sm">Based wherever you need us.</p>
+    <div class="about-img ph"></div>
+    <div class="about-content">
+      <span class="label">About</span>
+      <h2 class="about-heading">Two friends.<br />One vision.</h2>
+      <p>AZ& is a design studio founded on the belief that great interiors aren't about perfection — they're about authenticity. We combine careful listening, a strong design sensibility, and the power of modern visualization to help our clients truly see what's possible.</p>
+      <p class="about-location">Based wherever you need us.</p>
+      <a href="#contact" class="btn">Work with us →</a>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
-    <div class="contact-top">
-      <span class="eyebrow">Get in touch</span>
-    </div>
-    <h2 class="contact-heading">
-      Ready to reimagine<br /><em>your space?</em>
-    </h2>
-    <div class="contact-links">
-      <a href="mailto:azampersand@gmail.com" class="contact-link">azampersand@gmail.com →</a>
-      <a href="https://instagram.com/azampersand" target="_blank" rel="noopener" class="contact-link">@azampersand →</a>
+    <div class="contact-inner">
+      <h2 class="contact-heading">Ready to reimagine<br /><em>your space?</em></h2>
+      <div class="contact-links">
+        <a href="mailto:azampersand@gmail.com" class="contact-link">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-val">azampersand@gmail.com →</span>
+        </a>
+        <a href="https://instagram.com/azampersand" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-label">Instagram</span>
+          <span class="contact-link-val">@azampersand →</span>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <img src="logo.PNG" alt="AZ&" class="footer-logo" />
-    <span class="footer-copy">&copy; 2026 AZ&amp;</span>
+    <div class="footer-links">
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="mailto:azampersand@gmail.com">Contact</a>
+    </div>
+    <span class="footer-copy">&copy; 2026 AZ&amp; All rights reserved.</span>
   </footer>
 
   <script src="script.js"></script>
