@@ -7,8 +7,8 @@
   --ink:    #1a1a18;
   --mid:    #7a7a76;
   --rule:   #d8d8d4;
-  --serif:  'Playfair Display', Georgia, serif;
-  --sans:   'DM Sans', system-ui, sans-serif;
+  --serif:  'Montserrat', sans-serif;
+  --sans:   'Montserrat', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -130,16 +130,16 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero-title {
-  font-family: var(--serif);
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-family: var(--sans);
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
   color: #fff;
+  text-transform: uppercase;
 }
 
-.hero-title em {
-  font-style: italic;
-}
+.teal { color: var(--teal); }
 
 .hero-scroll {
   position: absolute;
@@ -166,11 +166,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 .intro-text {
-  font-family: var(--serif);
-  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
-  font-weight: 700;
-  line-height: 1.6;
-  color: var(--ink);
+  font-family: var(--sans);
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--mid);
   max-width: 60ch;
 }
 
@@ -263,9 +263,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 .project-name {
-  font-family: var(--serif);
-  font-size: 1.15rem;
+  font-family: var(--sans);
+  font-size: 1rem;
   font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   color: #fff;
 }
 
@@ -290,10 +292,12 @@ a { color: inherit; text-decoration: none; }
 }
 
 .services-heading {
-  font-family: var(--serif);
-  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-family: var(--sans);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
   margin-bottom: 1.25rem;
 }
 
@@ -323,9 +327,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 .service-name {
-  font-family: var(--serif);
-  font-size: 1.6rem;
+  font-family: var(--sans);
+  font-size: 1.3rem;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .service-desc {
@@ -365,10 +371,12 @@ a { color: inherit; text-decoration: none; }
 }
 
 .about-heading {
-  font-family: var(--serif);
-  font-size: clamp(2.2rem, 3.5vw, 3rem);
+  font-family: var(--sans);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
 }
 
 .about-content p {
@@ -412,17 +420,14 @@ a { color: inherit; text-decoration: none; }
 }
 
 .contact-heading {
-  font-family: var(--serif);
-  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-family: var(--sans);
+  font-size: clamp(2.4rem, 5.5vw, 5rem);
   font-weight: 800;
   line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   color: #f2f1ef;
   margin-bottom: 4rem;
-}
-
-.contact-heading em {
-  font-style: italic;
-  color: var(--teal);
 }
 
 .contact-links {
@@ -448,9 +453,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .contact-link-val {
-  font-family: var(--serif);
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-  font-weight: 300;
+  font-family: var(--sans);
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  font-weight: 500;
   color: #f2f1ef;
 }
 
