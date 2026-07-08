@@ -20,7 +20,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#contact" class="nav-cta">Request a Consultation</a></li>
+      <li><a href="#" class="nav-cta open-modal">Request a Consultation</a></li>
     </ul>
     <button class="nav-hamburger" aria-label="Menu">&#9776;</button>
   </nav>
@@ -47,7 +47,7 @@
     </div>
     <div class="projects-grid">
 
-      <a href="#" class="project-card project-card--large">
+      <a href="#" class="project-card project-card--large open-modal">
         <img src="Livingroom1.PNG" alt="Living Room Redesign" class="project-img" />
         <div class="project-info">
           <span class="project-name">Living Room Design</span>
@@ -55,7 +55,7 @@
         </div>
       </a>
 
-      <a href="#" class="project-card">
+      <a href="#" class="project-card open-modal">
         <img src="Landscape1.jpg" alt="Open Kitchen Concept" class="project-img" />
         <div class="project-info">
           <span class="project-name">Landscape Design</span>
@@ -63,7 +63,7 @@
         </div>
       </a>
 
-      <a href="#" class="project-card">
+      <a href="#" class="project-card open-modal">
         <img src="Kitchen2.PNG" alt="Primary Suite" class="project-img" />
         <div class="project-info">
           <span class="project-name">Kitchen Design</span>
@@ -71,7 +71,7 @@
         </div>
       </a>
 
-      <a href="#" class="project-card project-card--wide">
+      <a href="#" class="project-card project-card--wide open-modal">
         <img src="Bedroom1.jpg" alt="Loft Transformation" class="project-img" />
         <div class="project-info">
           <span class="project-name">Bedroom Design</span>
@@ -151,6 +151,66 @@
     </div>
     <span class="footer-copy">&copy; 2026 AZ&amp; All rights reserved.</span>
   </footer>
+
+  <!-- INTAKE MODAL -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <img src="logo_transparent.PNG" alt="AZ&" class="modal-logo" />
+        <h2 class="modal-title">Book a Consultation</h2>
+        <p class="modal-sub">Tell us about your project and we'll be in touch within 24 hours.</p>
+      </div>
+      <form class="modal-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="project-type">Project Type</label>
+            <select id="project-type" name="project_type" required>
+              <option value="" disabled selected>Select a type</option>
+              <option>Living Room Design</option>
+              <option>Kitchen Design</option>
+              <option>Bedroom Design</option>
+              <option>Landscape Design</option>
+              <option>Full Home Design</option>
+              <option>Design Rendering Only</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="description">Tell us about your project</label>
+          <textarea id="description" name="description" rows="4" placeholder="Describe your space, style preferences, goals, or anything else you'd like us to know..."></textarea>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="budget">Budget Range</label>
+          <select id="budget" name="budget">
+            <option value="" disabled selected>Select a range</option>
+            <option>Under $5,000</option>
+            <option>$5,000 – $15,000</option>
+            <option>$15,000 – $30,000</option>
+            <option>$30,000 – $50,000</option>
+            <option>$50,000+</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <button type="submit" class="form-submit">Send Request →</button>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
