@@ -637,6 +637,213 @@ a { color: inherit; text-decoration: none; }
   .form-row { grid-template-columns: 1fr; }
 }
 
+/* ── PAGE HERO (About) ── */
+.page-hero {
+  position: relative;
+  height: 60svh;
+  overflow: hidden;
+  margin-top: 144px;
+}
+
+.page-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  bottom: 3rem;
+  left: 2.5rem;
+  z-index: 2;
+}
+
+.page-hero-overlay .label {
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 0.75rem;
+}
+
+.page-hero-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* ── ABOUT PAGE ── */
+.about-page {
+  padding: 5rem 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-page-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 6rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.about-page-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-page-intro p {
+  font-size: 1rem;
+  color: var(--mid);
+  line-height: 1.9;
+}
+
+.about-page-values {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.about-value {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.about-value-num {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--teal);
+  flex-shrink: 0;
+  padding-top: 0.25rem;
+}
+
+.about-value-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.6rem;
+}
+
+.about-value-desc {
+  font-size: 0.88rem;
+  color: var(--mid);
+  line-height: 1.85;
+  max-width: 44ch;
+}
+
+.about-page-cta {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.btn-large {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 1rem 2rem;
+  transition: background 0.2s;
+}
+
+.btn-large:hover { background: var(--teal); }
+
+/* ── CONSULTATION PAGE ── */
+.consult-page {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  min-height: calc(100svh - 144px);
+  margin-top: 144px;
+}
+
+.consult-left {
+  padding: 5rem 4rem 5rem 2.5rem;
+  border-right: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.consult-heading {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.consult-sub {
+  font-size: 0.9rem;
+  color: var(--mid);
+  line-height: 1.8;
+  max-width: 38ch;
+}
+
+.consult-process {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 1rem;
+}
+
+.consult-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.consult-step-num {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--teal);
+  flex-shrink: 0;
+  padding-top: 0.2rem;
+}
+
+.consult-step-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.consult-step-desc {
+  font-size: 0.82rem;
+  color: var(--mid);
+  line-height: 1.8;
+}
+
+.consult-right {
+  padding: 5rem 2.5rem 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.consult-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 560px;
+}
+
+/* ── NAV ACTIVE STATE ── */
+.nav-links .nav-active {
+  color: var(--ink);
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .nav {
@@ -690,4 +897,18 @@ a { color: inherit; text-decoration: none; }
     align-items: flex-start;
     padding: 1.5rem;
   }
+
+  .page-hero { margin-top: 0; height: 50svh; }
+  .page-hero-overlay { left: 1.5rem; bottom: 2rem; }
+
+  .about-page { padding: 3rem 1.5rem; }
+  .about-page-inner { grid-template-columns: 1fr; gap: 3rem; }
+
+  .about-page-cta { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+
+  .consult-page { grid-template-columns: 1fr; margin-top: 0; }
+  .consult-left { padding: 3rem 1.5rem; border-right: none; border-bottom: 1px solid var(--rule); }
+  .consult-right { padding: 3rem 1.5rem; }
+  .consult-form { max-width: 100%; }
+  .form-row { grid-template-columns: 1fr; }
 }

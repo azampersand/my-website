@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Consultation — AZ&</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="logo_transparent.PNG" alt="AZ&" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="consultation.html" class="nav-cta nav-active">Request a Consultation</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- CONSULTATION PAGE -->
+  <section class="consult-page">
+    <div class="consult-left">
+      <span class="label">Request a Consultation</span>
+      <h1 class="consult-heading">Let's bring your<br /><span class="teal">vision to life.</span></h1>
+      <p class="consult-sub">Tell us about your project and we'll be in touch within 24 hours to discuss next steps.</p>
+      <div class="consult-process">
+        <div class="consult-step">
+          <span class="consult-step-num">01</span>
+          <div>
+            <h3 class="consult-step-title">Submit your request</h3>
+            <p class="consult-step-desc">Share a few details about your space and what you're hoping to achieve.</p>
+          </div>
+        </div>
+        <div class="consult-step">
+          <span class="consult-step-num">02</span>
+          <div>
+            <h3 class="consult-step-title">We connect</h3>
+            <p class="consult-step-desc">We reach out within 24 hours to learn more and align on your goals.</p>
+          </div>
+        </div>
+        <div class="consult-step">
+          <span class="consult-step-num">03</span>
+          <div>
+            <h3 class="consult-step-title">Design begins</h3>
+            <p class="consult-step-desc">We get to work on a direction that feels unmistakably yours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="consult-right">
+      <form class="consult-form" action="https://formspree.io/f/xbdvvgzb" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="project-type">Project Type</label>
+            <select id="project-type" name="project_type" required>
+              <option value="" disabled selected>Select a type</option>
+              <option>Living Room Design</option>
+              <option>Kitchen Design</option>
+              <option>Bedroom Design</option>
+              <option>Landscape Design</option>
+              <option>Full Home Design</option>
+              <option>Design Rendering Only</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="description">Tell us about your project</label>
+          <textarea id="description" name="description" rows="5" placeholder="Describe your space, style preferences, goals, or anything else you'd like us to know..."></textarea>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="budget">Budget Range</label>
+          <select id="budget" name="budget">
+            <option value="" disabled selected>Select a range</option>
+            <option>Under $5,000</option>
+            <option>$5,000 – $15,000</option>
+            <option>$15,000 – $30,000</option>
+            <option>$30,000 – $50,000</option>
+            <option>$50,000+</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <button type="submit" class="form-submit">Send Request →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="index.html"><img src="logo_transparent.PNG" alt="AZ&" class="footer-logo" /></a>
+    <div class="footer-links">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#services">Services</a>
+      <a href="about.html">About</a>
+      <a href="mailto:azampersand@gmail.com">Contact</a>
+    </div>
+    <span class="footer-copy">&copy; 2026 AZ&amp; All rights reserved.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
